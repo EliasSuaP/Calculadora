@@ -50,7 +50,7 @@ function calcularEdad(fecha){
         }
     };
 
-    alert("años: " + ageYear + " meses: " + ageMonthv + " dias: " + ageDay());
+    //alert("años: " + ageYear + " meses: " + ageMonthv + " dias: " + ageDay());
 
     document.getElementById('resultAño').innerHTML = ageYear
     document.getElementById('resultMes').innerHTML = ageMonthv
@@ -58,7 +58,7 @@ function calcularEdad(fecha){
 }
 
 function validateForm(form) {
-    alert("validateform");
+    //alert("validateform");
     let error = false;
     let dia = form["dia"].value;
     let mes = form["mes"].value;
@@ -98,6 +98,6 @@ function validateForm(form) {
     }
     /* Llama a la función para calcular la edad y regresa falso para que no refresque la pagina */
     calcularEdad(fecha);
-    alert("devuelve true");
+    //alert("devuelve true");
     return false;
 }
